@@ -1,0 +1,17 @@
+{% extends 'gadgets/base.html' %}
+
+{% block title %}Gadget List{% endblock %}
+
+{% block content %}
+  <h1>Gadget List</h1>
+  
+  <ul class="list-group">
+      {% for gadget in gadgets %}
+          <li class="list-group-item">
+              <a href="{% url 'gadget_detail' gadget.pk %}">{{ gadget.name }}</a>
+          </li>
+      {% endfor %}
+  </ul>
+
+  {% include 'gadgets/pagination.html' %}
+{% endblock %}

@@ -1,0 +1,18 @@
+<div class="pagination mt-4">
+    <span class="step-links">
+        {% if gadgets.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ gadgets.previous_page_number }}">previous</a>
+        {% endif %}
+  
+        <span class="current">
+            Page {{ gadgets.number }} of {{ gadgets.paginator.num_pages }}.
+        </span>
+  
+        {% if gadgets.has_next %}
+            <a href="?page={{ gadgets.next_page_number }}">next</a>
+            <a href="?page={{ gadgets.paginator.num_pages }}">last &raquo;</a>
+        {% endif %}
+    </span>
+  </div>
+  

@@ -1,0 +1,17 @@
+{% extends 'gadgets/base.html' %}
+
+{% block title %}{{ gadget.name }} Details{% endblock %}
+
+{% block content %}
+  <h1>{{ gadget.name }} Details</h1>
+  
+  <p><strong>ID:</strong> {{ gadget.pk }}</p>
+  <p><strong>Name:</strong> {{ gadget.name }}</p>
+  <p><strong>Description:</strong> {{ gadget.description }}</p>
+  <p><strong>Brand:</strong> {{ gadget.brand }}</p>
+  <p><strong>Category:</strong> {{ gadget.category }}</p>
+  <p><strong>Release Date:</strong> {{ gadget.release_date }}</p>
+  <p><strong>Image:</strong> <img src="{{ gadget.image.url }}" alt="{{ gadget.name }} Image" width="200"></p>
+
+  {% include 'gadgets/footer.html' %}
+{% endblock %}

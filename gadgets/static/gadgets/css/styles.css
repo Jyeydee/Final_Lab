@@ -1,0 +1,95 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Roboto Slab';
+  }
+
+  main {
+    padding-top: 60px;
+    padding-bottom: 60px; /* Adjust as needed */
+  }
+
+body {
+    /* background-color: lightblue;  */
+    background-image: url('/static/gadgets/css/images/save.jpg');
+    background-size: cover; /* This property ensures the image covers the entire body */
+    background-position: center;
+    background-attachment: fixed; /* Set the background position as fixed */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+title {
+    text-emphasis-color: white;
+}
+h1 {
+    color:aqua;
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    height: 7vh;
+    width: 100%;
+    background-color: aqua;
+    color: black;
+    bottom: 0;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #430000;
+
+}
+
+/* Gadget List Styles */
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Gadget Detail Styles */
+#gadget-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin-right: 5px;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+}
